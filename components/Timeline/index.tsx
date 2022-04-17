@@ -35,11 +35,31 @@ export const Timeline = () => {
   const FullTimeline = () => (
     <>
       <Divider />
-      <Year>2014</Year>
+      <Year>2019 - 2021</Year>
       <ul>
-        <Step title="Started at University">
-          I started studying Business Administration at The Agricultural
-          University of Georgia.
+        <Step title="Masters @NITK Surathkal">
+          I completed my Masters in Construction Technology and Management at
+          NITK Surathkal.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2017 - 2019</Year>
+      <ul>
+        <Step title="Worked as Planning Engineer @L&T">
+          Performed Project Scheduling and Critical Path Analysis continuously
+          and assigned work to a team based on the schedule, and monitored Work
+          Progress for continuous Improvement.
+          <br />
+          Also handled the Client Invoice & Certification, Quantity surveying.
+          Also played a vital role in the Client Management Review Meetings,
+          Cost management and Client Correspondence
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2013 - 2017</Year>
+      <ul>
+        <Step title="Bachelors @VNIT Nagpur">
+          I completed my Bachelors in Civil Engineering at VNIT Nagpur.
         </Step>
       </ul>
       <Divider />
@@ -49,91 +69,26 @@ export const Timeline = () => {
   return (
     <>
       <h3>Timeline</h3>
-      <Year>2021</Year>
+      <Year>2021 - Present</Year>
       <ul>
-        <Step title="Joined Vabaco">
-          I'm thrilled about this new role as a React Developer, helping create
-          enterprise web applications for healthcare services.
+        <Step title="Joined needl.ai as a Full Stack Dev">
+          I developed various complex features like Feed Creation, Channels to
+          collaborate with people, Admin tool for organizations to manage their
+          users, etc (both Frontend and Backend) in the application.
+          <br />
+          Technology Stack used: React JS, Node JS, PostgreSQL, Python, AWS
         </Step>
       </ul>
       <Divider />
-      <Year>2020</Year>
+      <Year>2020 - 2021</Year>
       <ul>
-        <Step title="Top Rated Freelancer on Upwork">
-          I'm very exited to represent the top 10% of talent on Upwork. The
-          grind has just begun!
-        </Step>
-        <Step title="Open-Source React Template">
-          Created a{" "}
-          <a
-            href="https://github.com/Adrinlol/landy-react-template"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            template
-          </a>{" "}
-          that comes with multi-lingual support, smooth animations, contact form
-          built with React Hooks and error validations, set of ready to use
-          sections and most importantly, a PERFECT score on Lighthouse.
-        </Step>
-        <Step title="First Article on Medium">
-          Wrote my{" "}
-          <a
-            href="https://medium.com/swlh/setting-up-and-deploying-a-twitter-app-from-scratch-twitter-bot-article-8b6798d68a16"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            first article
-          </a>{" "}
-          on how to set up an deploy a twitter app from scratch. This bot was
-          able to search, retweet and like all the tweets containing the
-          provided keyword.
-        </Step>
-        <Step title="Second Project for the Open-Source">
-          This was around the time when I was reading a lot about JavaScript, so
-          instead of having bunch of different articles and books, I decided to
-          create{" "}
-          <a
-            href="https://github.com/Adrinlol/javascript-guide"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            one project
-          </a>{" "}
-          aimed at combining basic to advanced concepts.
-        </Step>
-        <Step title="Wrote First Open-Source Project">
-          Open-sourced{" "}
-          <a
-            href="https://github.com/Adrinlol/javascript-color-gradient"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            my first project
-          </a>
-          , currently holding over 1.7k monthly downloads. <br />
-          It handles the login behind generating an array of color gradients by
-          providing start and finish colors, as well as the required number of
-          midpoints.
-        </Step>
-        <Step title="Completed My First Project on Upwork">
-          Developed a responsive, multi-language landing page for an AI
-          consulting company using React.js.
-        </Step>
-      </ul>
-      <Divider />
-      <Year>2018</Year>
-      <ul>
-        <Step title="Joined Circle">
-          I was offered and accepted a full-time offer with Circle - a Software
-          Development company in Georgia.
-        </Step>
-        <Step title="Started Learning Frontend Development">
-          Got hooked on learning Frontend, but I wasn't sure where or how to
-          start. <br />
-          There were so many options available not only programming
-          language-wise, but regarding tools, frameworks, and technologies as
-          well.
+        <Step title="Full Stack Developer Trainee @Nxtwave">
+          I joined Nxtwave as a Full Stack Developer Trainee. I learned
+          programming & web development fundamentals and got trained to build
+          efficient MERN stack applications end-to-end.
+          <br />I also helped the fellow developers in clarifying their coding
+          related doubts. Currently, I'm mentoring the naive developers and
+          resolving their queries on career and coding.
         </Step>
       </ul>
       {isShowingFullTimeline ? (

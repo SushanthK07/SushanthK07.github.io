@@ -30,7 +30,6 @@ export const Projects = () => {
                     }`}</span>
                     <h4>{item.name}</h4>
                   </Flex>
-                  <span>{item.stars} Stars</span>
                 </Flex>
                 <p>{item.description}</p>
               </Item>

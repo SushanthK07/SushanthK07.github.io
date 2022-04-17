@@ -3,42 +3,37 @@ import styled from "styled-components";
 import Image from "next/image";
 import { Timeline } from "components/Timeline";
 import { Projects } from "components/Projects";
-import { Posts } from "components/Posts";
 import Container from "components/Layout/Container";
 import { StringProps } from "lib/types";
 import { devices } from "lib/displayDevice";
 
 import { Flex } from "components/Layout/Container/styles";
 
-import ProfilePicture from "public/assets/png/Lasha.png";
+import ProfilePicture from "public/assets/jpg/profile.jpg";
 
 export default function Home() {
   return (
     <Container>
       <HeroFlex align="flex-start">
         <ContentWrapper>
-          <h1>Lasha Kakabadze</h1>
-          <h2>React.js Developer</h2>
+          <h1>Sushanth Kummitha</h1>
+          <h2>Full Stack Developer</h2>
+          <h2>React JS | Node JS | Next JS | Python</h2>
           <p>
-            Passionate React Developer with 3+ years of experience blending the
-            design with programming skills to deliver an immersive and engaging
-            user experience through efficient website development, proactive
-            feature optimization, and relentless debugging –&nbsp;
-            {" while you're here "}
-            <Link href="/about">
-              <a>learn more about me.</a>
-            </Link>
+            Passionate Full Stack Developer with more than a year of experience
+            in building production ready effective and efficient web
+            applications with typescript, and proactive in feature optimization,
+            performance improvement and debugging.
           </p>
         </ContentWrapper>
         <RoundImage
           src={ProfilePicture}
-          alt="Picture of Lasha"
-          width="150px"
-          height="150px"
+          alt="Profile Picture"
+          width="250px"
+          height="250px"
         />
       </HeroFlex>
       <Projects />
-      <Posts title="Featured Stories" />
       <Timeline />
     </Container>
   );

@@ -1,4 +1,3 @@
-import NowPlaying from "components/NowPlaying";
 import { Navigation } from "components/Layout/Navigation";
 import { ExternalLinkProps, StringProps } from "lib/types";
 import ScrollToTop from "components/Layout/ScrollToTop";
@@ -22,29 +21,26 @@ export const Footer = ({ darkTheme }: StringProps) => {
       <StyledContainer>
         <Flex justify="center" direction="column">
           <hr />
-          <NowPlaying />
           <GridContainer>
             <FlexLinks>
               <Navigation href="/" text="Home" />
-              <Navigation href="/blog" text="Blog" />
               <Navigation href="/testimonials" text="Testimonials" />
             </FlexLinks>
             <FlexLinks>
-              <ExternalLink href="https://twitter.com/Adrinlolx">
+              <ExternalLink href="https://twitter.com/sushanthk07">
                 Twitter
               </ExternalLink>
-              <ExternalLink href="https://github.com/Adrinlol">
+              <ExternalLink href="https://github.com/SushanthK07">
                 GitHub
               </ExternalLink>
-              <ExternalLink href="https://www.linkedin.com/in/lasha-kakabadze/">
+              <ExternalLink href="https://www.linkedin.com/in/sushanth-kummitha/">
                 LinkedIn
               </ExternalLink>
             </FlexLinks>
             <FlexLinks>
-              <ExternalLink href="https://www.linkedin.com/in/lasha-kakabadze/">
-                Download
+              <ExternalLink href="mailto:sushanthkummitha@gmail.com">
+                Email me
               </ExternalLink>
-              <Navigation href="/top-tracks" text="Top Tracks" />
             </FlexLinks>
           </GridContainer>
           <ScrollToTop darkTheme={darkTheme} />

@@ -14,7 +14,6 @@ export const Header = ({ darkTheme, changeTheme }: HeaderProps) => {
       <Wrapper>
         <div>
           <Navigation href="/" text="Home" />
-          <Navigation href="/blog" text="Blog" />
           <Navigation href="/testimonials" text="Testimonials" />
         </div>
         <button onClick={changeTheme} aria-label="change-theme">
