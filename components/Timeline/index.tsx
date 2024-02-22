@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { format, differenceInMonths, differenceInYears } from "date-fns";
 import { ChildrenStringProps } from "lib/types";
 import { COLOR_SPOTIFY_GREEN } from "lib/colorPalette";
 
@@ -7,6 +8,23 @@ import { DividerBorder, StepLi, MoreButton } from "components/Timeline/styles";
 const Divider = () => <DividerBorder />;
 
 const Year = ({ children }: ChildrenStringProps) => <h4>{children}</h4>;
+
+const getTimeDifference = (startDate: Date, endDate: Date) => {
+  let years = differenceInYears(endDate, startDate);
+  let months = (differenceInMonths(endDate, startDate) % 12) + 1;
+
+  if (months >= 12) {
+    months -= 12;
+    years += 1;
+  }
+
+  const formattedYears =
+    years > 0 ? `${years} year${years === 1 ? "" : "s"}` : "";
+  const formattedMonths =
+    months > 0 ? `${months} month${months === 1 ? "" : "s"}` : "";
+
+  return [formattedYears, formattedMonths].filter(Boolean).join(" ");
+};
 
 export const Timeline = () => {
   const [isShowingFullTimeline, showFullTimeline] = useState(false);
@@ -35,7 +53,10 @@ export const Timeline = () => {
   const FullTimeline = () => (
     <>
       <Divider />
-      <Year>2019 - 2021</Year>
+      <Year>
+        July 2019 - April 2021 (
+        {getTimeDifference(new Date(2019, 6), new Date(2021, 3))})
+      </Year>
       <ul>
         <Step title="Masters @NITK Surathkal">
           I completed my Masters in Construction Technology and Management at
@@ -43,7 +64,10 @@ export const Timeline = () => {
         </Step>
       </ul>
       <Divider />
-      <Year>2017 - 2019</Year>
+      <Year>
+        July 2017 - July 2019 (
+        {getTimeDifference(new Date(2017, 6), new Date(2019, 6))})
+      </Year>
       <ul>
         <Step title="Worked as Planning Engineer @L&T">
           Performed Project Scheduling and Critical Path Analysis continuously
@@ -56,7 +80,10 @@ export const Timeline = () => {
         </Step>
       </ul>
       <Divider />
-      <Year>2013 - 2017</Year>
+      <Year>
+        July 2013 - May 2017 (
+        {getTimeDifference(new Date(2013, 6), new Date(2017, 4))})
+      </Year>
       <ul>
         <Step title="Bachelors @VNIT Nagpur">
           I completed my Bachelors in Civil Engineering at VNIT Nagpur.
@@ -69,18 +96,41 @@ export const Timeline = () => {
   return (
     <>
       <h3>Timeline</h3>
-      <Year>2021 - Present</Year>
+      <Year>
+        April 2021 - Present ({getTimeDifference(new Date(2021, 3), new Date())}
+        )
+      </Year>
       <ul>
-        <Step title="Joined needl.ai as a Full Stack Dev">
+        <Step title="Currently working in needl.ai as a Senior Software Development Engineer">
           I developed various complex features like Feed Creation, Channels to
           collaborate with people, Admin tool for organizations to manage their
-          users, etc (both Frontend and Backend) in the application.
+          users, etc in terms of both frontend UI and backend APIs using
+          postgres database.
           <br />
-          Technology Stack used: React JS, Node JS, PostgreSQL, Python, AWS
+          I also worked on the designing and building Notifications (both in app
+          and email), designing and building the external APIs for our
+          enterprise customers using swagger doc & OpenAPI specification
+          <br />
+          I also worked on fetching the listed companies data by scraping from
+          wikipedia and other sources, and also worked on integrating Open AI's
+          capabilities using their APIs to generate keywords for the companies
+          for the feed creation
+          <br />
+          I'm currently leading the team of 5 developers and helping them in
+          performing their tasks and also in resolving their queries. I'm also
+          responsible for my team's sprint planning, code reviews, and
+          deployments.
+          <br />
+          Technology Stack used: React JS, Node JS, PostgreSQL, Python, AWS,
+          Docker, Kubernetes, Azure, Swagger, Material UI, Tailwind CSS, Radix
+          UI, Reach UI, slate JS, Lottie Animations etc
         </Step>
       </ul>
       <Divider />
-      <Year>2020 - 2021</Year>
+      <Year>
+        December 2020 - April 2021 (
+        {getTimeDifference(new Date(2020, 11), new Date(2021, 3))})
+      </Year>
       <ul>
         <Step title="Full Stack Developer Trainee @Nxtwave">
           I joined Nxtwave as a Full Stack Developer Trainee. I learned
