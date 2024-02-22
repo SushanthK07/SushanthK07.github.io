@@ -33,7 +33,7 @@ export const Footer = ({ darkTheme }: StringProps) => {
               <ExternalLink href="https://github.com/SushanthK07">
                 GitHub
               </ExternalLink>
-              <ExternalLink href="https://www.linkedin.com/in/sushanth-kummitha/">
+              <ExternalLink href="https://www.linkedin.com/in/sushanthk07">
                 LinkedIn
               </ExternalLink>
             </FlexLinks>

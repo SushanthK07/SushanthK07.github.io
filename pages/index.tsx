@@ -18,12 +18,16 @@ export default function Home() {
         <ContentWrapper>
           <h1>Sushanth Kummitha</h1>
           <h2>Full Stack Developer</h2>
-          <h2>React JS | Node JS | Next JS | Python</h2>
+          <h2>React JS | Node JS | Next JS | Svelte JS | Python</h2>
           <p>
-            Passionate Full Stack Developer with more than a year of experience
+            Passionate Full Stack Developer with more than 3 years of experience
             in building production ready effective and efficient web
             applications with typescript, and proactive in feature optimization,
-            performance improvement and debugging.
+            performance improvement and debugging. I am a quick learner and
+            always eager to learn new technologies and frameworks. Iam also
+            proficient in using various AWS services, and have experience in
+            deploying applications to AWS using CI/CD pipelines with the help of
+            Docker and Kubernetes.
           </p>
         </ContentWrapper>
         <RoundImage
