@@ -37,7 +37,7 @@ export default function Home() {
           height="250px"
         />
       </HeroFlex>
-      <Projects />
+      {/* <Projects /> */}
       <Timeline />
     </Container>
   );
