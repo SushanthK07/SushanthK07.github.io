@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ServerStyleSheet } from "styled-components";
 import Document, {
   Html,

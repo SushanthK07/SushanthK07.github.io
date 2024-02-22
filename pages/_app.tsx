@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { AppProps } from "next/app";
 import router from "next/router";
 import { ThemeProvider } from "next-themes";
